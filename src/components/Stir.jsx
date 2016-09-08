@@ -4,6 +4,10 @@ import Nav from './Nav';
 
 export default class Stir extends Component {
 
+  componentDidMount() {
+    document.title = 'Projects | Stir';
+  }
+
   render() {
     return (
       <div>

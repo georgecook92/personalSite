@@ -3,6 +3,10 @@ import Nav from './Nav';
 
 export default class Profile extends Component {
 
+  componentDidMount() {
+    document.title = 'About Me';
+  }
+
   render() {
     return (
       <div>

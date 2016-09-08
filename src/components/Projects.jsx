@@ -4,6 +4,10 @@ import Nav from './Nav';
 
 export default class Projects extends Component {
 
+  componentDidMount() {
+    document.title = 'Projects';
+  }
+
   render() {
     return (
       <div>

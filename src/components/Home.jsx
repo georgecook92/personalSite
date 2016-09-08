@@ -4,6 +4,10 @@ import Nav from './Nav';
 
 export default class Home extends Component {
 
+  componentDidMount() {
+    document.title = 'Home';
+  }
+
   render() {
     return (
       <div>

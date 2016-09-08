@@ -4,6 +4,10 @@ import Nav from './Nav';
 
 export default class ParentsVoice extends Component {
 
+  componentDidMount() {
+    document.title = 'Projects | Parents Voice';
+  }
+
   render() {
     return (
       <div>
