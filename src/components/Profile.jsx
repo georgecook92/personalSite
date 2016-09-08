@@ -33,10 +33,12 @@ export default class Profile extends Component {
             <header>Skills.</header>
 
             <ul>
-              <li>JavaScript - React.js, Node.js, JQuery, Service Workers</li>
-              <li>HTML5</li>
+              <li>JavaScript - React.js, Angular.js, Node.js, Service Workers</li>
+              <li>Terminal Use</li>
+              <li>HTML5 (Including Canvas)</li>
               <li>CSS3</li>
-              <li>Browser Storage - including IndexedDB and Local Storage</li>
+              <li>SASS</li>
+              <li>Browser Storage - including IndexedDB, Local Storage and the new Cache API</li>
               <li>Version Control - Git</li>
               <li>Java/Android Development</li>
               <li>MySQL</li>
