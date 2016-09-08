@@ -1,0 +1,464 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+@font-face {
+    font-family: baloo;
+    src: url(fonts/BalooTamma-Regular.ttf);
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(fonts/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: raleway-black;
+    src: url(fonts/Raleway/Raleway-Black.ttf);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navigation {
+  height: 100vh;
+  z-index: 10;
+  background-color: #1a5a81;
+  display: none;
+  overflow: auto;
+  padding: 0 2rem;
+  color: white;
+  font-family: raleway, cursive;
+}
+
+#navigation h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+#navigation ul  {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+#navigation ul li {
+  font-size: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+#menu {
+  width: 35px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#full-height {
+  overflow: auto;
+  box-sizing: border-box;
+  display: block;
+  padding: 0 2rem;
+  cursor: pointer;
+}
+#full-height, #half-top, #half-bottom {
+  width: 100%;
+  height: 100vh;
+  background-color: #82aab9;
+}
+
+#full-height h2, .profile-header h2, .profile-header h3, #navigation h2 {
+  font-family: raleway-black, cursive;
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+  margin: 20px 0 0 0rem;
+  color: white;
+}
+
+.profile-header h2 {
+  font-size: 1.8rem;
+}
+
+.profile-header h3 {
+  margin-top: 0;
+}
+
+#full-height h3, #full-height p.about-text, #half-bottom, #half-top  {
+  font-family: raleway, cursive;
+  text-align: center;
+}
+
+#full-height h3 {
+  font-size: 3rem;
+  margin: 1.5rem 0 3rem 0;
+}
+
+#full-height p.about-text {
+  font-size: 1.4rem;
+}
+
+#full-height img {
+  width: 25%;
+  display: block;
+  margin: 3rem auto 0 auto;
+  border-radius:200px;
+
+}
+
+//HERE
+
+#half-top {
+  background-color: #4b87aa;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#projects-wrap {
+  align-self: center;
+}
+
+#half-bottom {
+  background-color: #1a5a81;
+  overflow: auto;
+}
+
+#half-bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+#half-bottom h3, #half-top h3 {
+  font-size: 2.2rem;
+  margin: 4.2rem 0 4rem 0;
+}
+
+#half-bottom .email-contact {
+  height: 80px;
+  line-height: 80px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+#half-bottom .email-contact img {
+  width: 10%;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.social-contact img {
+  width: 12%;
+  margin: 0 auto 2rem auto;
+  display: block;
+}
+
+/**************************** Profile *****************************/
+
+.profile-header {
+  background-color: #82aab9;
+  overflow: auto;
+  height: 150px;
+  padding: 0 2rem;
+}
+
+.profile-header h3 {
+  text-align: center;
+  font-family: raleway, cursive;
+  font-size: 2rem;
+}
+
+#interests-box, #skills-box {
+  background-color: #4b87aa;
+  overflow: auto;
+  color: white;
+  font-family: raleway, cursive;
+  padding: 2rem 1rem;
+  line-height: 1.4rem;
+}
+
+#skills-box {
+  background-color: #1a5a81;
+}
+
+#interests-box header, #skills-box header {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 0 2.5rem 0;
+}
+
+#interests-box h4 {
+  font-size: 1.4rem;
+
+
+}
+
+#interests-box p {
+  font-size: 1.15rem;
+}
+
+#skills-box ul li {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+/**************      Projects      *********/
+
+#wrapper-projects {
+  height: 100%;
+  overflow: auto;
+}
+
+#parents-voice {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3rem 2rem;
+  background-color: #1a5a81;
+}
+
+#parents-voice h3, #stir-app h3, #tbc {
+  text-align: center;
+  font-family: raleway, cursive;
+  color: white;
+}
+
+#parents-voice img, #stir-app img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  min-width: 80px;
+  max-width: 150px;
+  border-radius: 10px;
+
+}
+#stir-app, #tbc {
+  background-color: #4b87aa;
+  box-sizing: border-box;
+  padding: 3rem 2rem;
+  font-family: raleway, cursive;
+}
+
+#parents-voice h4, #stir-app h4 {
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+  font-family: raleway, cursive;
+}
+
+#project-heading {
+  background-color: #4b87aa;
+  font-family: raleway, cursive;
+  overflow: auto;
+}
+
+#project-heading img {
+  width: 25%;
+  max-width: 170px;
+  border-radius: 10px;
+  margin: 2rem auto 2rem auto;
+  display: block;
+}
+
+#project-heading-text {
+  color: white;
+  text-align: center;
+}
+
+#project-heading-text p a {
+  text-decoration: underline;
+}
+
+#project-info {
+  background-color: #1a5a81;
+  font-family: raleway, cursive;
+  padding: 1.5rem;
+  line-height: 1.4rem;
+}
+
+#project-info a {
+  text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 800px) {
+  #full-height {
+    width: 60%;
+    height: 100vh;
+
+    float: left;
+  }
+
+  #half-top, #half-bottom {
+    width: 40%;
+    background-color: #4b87aa;
+    float: left;
+    height: 50vh;
+  }
+
+  #half-bottom {
+    background-color: #1a5a81;
+  }
+  #half-bottom h3, #half-top h3 {
+    font-size: 1.6rem;
+    margin: 2rem 0 1.5rem 0;
+  }
+  .social-contact img {
+    display: inline;
+    margin-right: 1.5rem;
+  }
+  #half-bottom .email-contact {
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  #full-height h2, #navigation {
+    font-size: 3rem;
+  }
+
+  .profile-header h2, .profile-header h3 {
+    font-size: 2.4rem;
+  }
+
+  .profile-header h2 {
+    display: block;
+  }
+
+  .profile-header h3 {
+    line-height: normal;
+  }
+
+  #interests-box, #skills-box {
+    padding: 3rem 5rem;
+  }
+
+  #project-heading {
+    padding: 0.7rem 0;
+  }
+
+  #project-info {
+    padding: 2rem 10rem;
+  }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+  #navigation h3 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 10rem;
+  }
+
+
+  #navigation ul li {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  #parents-voice, #stir-app {
+    padding: 5rem 0;
+  }
+
+  #parents-voice img, #stir-app img {
+      width: 50%;
+      max-width: 250px;
+  }
+
+  #parents-voice h3, #stir-app h3 {
+      font-size: 2rem;
+  }
+
+  #parents-voice h4, #stir-app h4, #tbc {
+      font-size: 1.4rem;
+  }
+
+  #interests-box, #skills-box {
+    padding: 4rem 15rem;
+  }
+
+  #interests-box p, #skills-box p {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+
+  #interests-box h4 {
+    font-size: 1.9rem;
+  }
+
+  #interests-box header, #skills-box header {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0 2.5rem 0;
+  }
+
+  #skills-box ul li {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+
+  #full-height h3 {
+    margin: 10rem 0 5rem 0;
+    font-size: 5rem;
+  }
+
+  #full-height p.about-text {
+    font-size: 2.3rem;
+  }
+
+  #full-height img {
+    margin-top: 6rem;
+  }
+
+  #half-top h3 {
+    font-size: 3rem;
+  }
+
+  #half-top h4 {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  #half-bottom h3 {
+    font-size: 3rem;
+    margin: 6rem 0 3rem 0;
+  }
+
+  #half-bottom div.email-contact {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  #project-heading {
+    padding: 2rem 0;
+    font-size: 2rem;
+  }
+
+  #project-info {
+    padding: 6rem 15rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 350px) {
+  .email-contact a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .social-contact img {
+    width: 16%;
+  }
+}

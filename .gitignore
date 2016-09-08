@@ -1,4 +1,5 @@
 /node_modules
+/style/sass
 bundle.js
 npm-debug.log
 
