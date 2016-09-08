@@ -26,6 +26,7 @@ ReactDOM.render(
         <Route path='projects' component={Projects} />
         <Route path='projects/stir' component={Stir} />
         <Route path='projects/parents-voice' component={ParentsVoice} />
+        <Route path='*' component={Home} />
       </Route>
 
     </Router>
