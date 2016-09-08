@@ -453,10 +453,28 @@ a {
   .email-contact a {
     font-size: 1rem;
   }
+
+  #full-height p.about-text {
+    font-size: 1.2rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+  #full-height img {
+    width: 35%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .social-contact img {
     width: 16%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+  #full-height h3 {
+    margin-top: 4rem;
   }
 }
